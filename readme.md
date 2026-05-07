@@ -47,7 +47,7 @@ let bonificacao = funcionarios.map(x =>{
 
 ## filter()<br>
 
-### método que busca filtrar valores específicos e cria um novo com aqueles só com aqueles dados.<br>
+### método que busca filtrar valores específicos e cria um novo com aqueles dados.<br>
 
 ```
 // filtrar apenas valores que são pares.

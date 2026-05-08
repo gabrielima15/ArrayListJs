@@ -2,10 +2,10 @@
 
 ## O que é?<br>
 
-### No javaScript listas onde podemos guardar valores nele para afins de uso, uma delas é manipular valores dentro dele para criar uma nova lista com os dados modificados.
+### No javaScript listas são um conjuntos de elementos onde podemos guardar valores nele para uso empresariáis, uma delas é manipular valores dentro dele para criar uma nova lista com os dados modificados, os métodos abaixo não modificam o Array original apenas criam uma nova Array com o valores alterados.
 <br>
 
-## map() <br>
+## :arrows_counterclockwise: map() <br>
 
 ### Cria um novo array com valores modificados com mesma quantidade de valores do array anterior.<br>
 
@@ -45,7 +45,7 @@ let bonificacao = funcionarios.map(x =>{
 ```
 <br>
 
-## filter()<br>
+## :mag: filter()<br>
 
 ### método que busca filtrar valores específicos e cria um novo com aqueles dados.<br>
 
@@ -69,11 +69,11 @@ let funcionarioAtivo = funcionarios.filter(f =>{
 ```
 <br>
 
-## reduce()<br>
+## :abacus: reduce()<br>
 
 ### método que funciona como um contador responsável por reduzir todo o valor da lista em um valor único.<br>
 
-### estrutura do reduce: array.reduce(callback => (contador, incrementador),inicializador) nele você pode definir em como iniciar o valor inicial depois de definir a saida do método.<br>
+### :warnin: estrutura do reduce: array.reduce(callback => (contador, incrementador),inicializador) nele você pode definir em como iniciar o valor inicial depois de definir a saida do método.<br>
 
 ```
 // somando todos os numeros dentro da lista.
@@ -92,11 +92,12 @@ let valorSomado = funcionarios.reduce((inicial,final) => inicial + final.salario
 ```
 <br>
 
-## podemos utilizar também todos os métodos map,filter e reduce numa única variavel, também filtrar mais ainda em qual dado querendo obter tornando mais preciso o valor que estamos procurando!<br>
+## :bowl_with_spoon: podemos utilizar também todos os métodos map,filter e reduce numa única variavel, também filtrar mais ainda em qual dado querendo obter tornando mais preciso o valor que estamos procurando!<br>
 
 ```
-// Calcular o custo total da folha de pagamento apenas dos
-// funcionários ativos do departamento de TI que ganham acima de 6000."
+/*Calcular o custo total da folha de pagamento apenas os
+ funcionários ativos do departamento de TI que ganham mais de 6000."
+*/
 
 const custoTotalTI = funcionarios
   .filter(f => f.ativo && f.departamento === "TI" && f.salario > 6000)
